@@ -1,0 +1,257 @@
+body {
+  min-width: 780px;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin:auto;
+}
+nav {
+  background-color: #c12127;
+  color: rgba(255,255,255,0.8);  /*will change all font color in side nav excep <a> */
+  padding-top: 10px;
+  height: 30px;
+}
+nav a {
+color:rgba(255,255,255,0.8);
+text-decoration: none;
+}
+
+
+.wordTop-left, .heart{
+  margin: 0 -10px 0 20px;
+  
+
+}
+
+.top-links {
+  float:right;
+  display: inline;
+  margin: 0 20px 0 0;
+ clear: left;
+ border:1px solid none;
+ 
+ 
+}
+.top-links li {
+  display: inline-block;
+  margin: 0 10px ;
+  
+}
+
+
+.firstBackground{
+/* background-image: url('./images/city-scape.svg'); */
+background-image: url('./images/1_NHG0SL6kUtPbS9lY8fT9Gg.jpeg');
+background-size: cover;
+  background-repeat: no-repeat;
+  width:100%;
+
+}
+
+.logo{
+  width: 75px;
+  height: 40px;
+  margin: 20px 0 0 20px;
+  float:left;
+  clear: right;
+}
+
+input[type="input"], textarea {
+  margin: 20px 0 5px 20px;
+  background-color : rgb(31, 82, 111); 
+  font-size:15px;
+  float: left;
+  border: 1px solid rgb(135, 167, 187);
+  clear: right;
+
+}
+input::placeholder{
+  font-size: 15px;
+  padding: 10px;
+  
+}
+
+.icon{
+  margin: 20px 0 0 0px;
+ float: left;
+ border:1px solid rgb(135, 167, 187);
+ clear: right;
+}
+.bearLog-in{
+  width: 45px;
+  height: 45px;
+  margin: -50px 10px 0 0;
+  clear:both;
+  float: right;
+  
+}
+
+.log-in{
+color: rgb(135, 167, 187);
+text-decoration: none;
+margin: 20px 70px 0 40px;
+float: right;
+}
+
+h1{
+  font-family:  'open sans',sans-serif; 
+}
+ .h1Column1{
+   font-size: 35px;
+   color: white;
+   clear: both;
+  
+  
+}
+.pColumn1{
+  color:white;
+  margin:20px 0 30px 0px;
+  
+  
+}
+.buttomSign-npm{
+  margin: 10px 0 0 0;
+  color: white;
+  background-color: rgb(240, 146, 51);
+  border: 1px solid rgb(240, 146, 51);
+  text-align: center;
+  text-decoration: none;
+  padding:7px 20px 7px 20px;
+  border-radius:30px;
+  
+}
+.imgHuman{
+  margin: 80px 0 0 200px;
+  width:290px;
+  height:200px;
+ 
+ 
+ 
+ 
+}
+.secondBackground{
+  background-color: rgb(39, 53, 71);
+  height: 450px;
+ 
+
+}
+.h1column2{
+  font-size: 25px;
+  color: white;
+  
+ 
+}
+.ulcolumn2{
+  color: white;
+
+}
+.buttomSign-Orgs{
+ margin: 20px 0 20px 0;
+  color: white;
+ background-color: rgb(203, 56, 55);
+  border: 1px solid rgb(203, 56, 55);
+  text-align: center;
+  text-decoration: none;
+  padding:7px 20px 7px 20px;
+  border-radius:30px;
+}
+.learn-more{
+  margin: 50px 0 0 10px;
+  font-size: 15px;
+  color: white;
+  text-decoration: none
+}
+.ThirdBackground{
+  background: url("images/forklift.svg");
+  margin: 0 0 0 0;
+  background-repeat: no-repeat;
+  width: 100%;
+  height:400px;
+}
+.h1Column3{
+  color:white;
+  font-size:25px;
+  margin:80px 0 0 220px;
+}
+.pColumn3{
+  color: white;
+  font-size: 15px;
+  margin:20px 0 25px 220px;
+}
+
+.install{
+  background-color: rgb(49, 68, 88);
+  border: 1pa solid rgb(49, 68, 88);
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  color: white;
+  margin: 0px 0 0 220px;
+  font-size: 15px
+}
+.fourBackground{
+  background-color: white;
+  margin-top:0px; 
+  height: 100%;
+  overflow:hidden;
+  
+}
+.h1Column4{
+  color: rgb(83, 88, 98);
+  text-align: center;
+  margin-top: 50px;
+  font-size: 30px;
+}
+.pColumn4{
+  color:rgb(135, 145, 156);
+  text-align: center;
+  margin-top: 15px;
+}
+
+.find, .Discover, .build{
+  color: rgb(135, 145, 156);
+  border: 1px solid white;
+float: left;
+text-align: center;
+margin: 30px 0 0 20px;
+padding:10px;
+
+}
+
+.box{
+  margin-left: 260px;
+}
+p a{
+  color:rgb(208, 74, 73);
+  text-decoration-line: none;
+}
+
+.column1{
+border: 1px solid none;
+padding:  10px ;
+margin: 10px 0 0 220px;
+overflow: hidden;
+width: auto;
+height: 100%;
+}
+.column2{
+  overflow: hidden;
+
+ position: absolute;
+width: auto;
+height: auto;
+  border: 1px solid none;
+  padding:  10px ;
+  top: 450px;
+  left: 600px;
+  
+}
+.boxLine-input{
+  border: 1px solid none;
+  padding: 0px;
+  overflow: hidden;
+ height: 60px;
+  
+}
