@@ -8,7 +8,7 @@ body {
 }
 nav {
   background-color: #c12127;
-  color: rgba(255,255,255,0.8);  /*will change all font color in side nav excep <a> */
+  color: rgba(255,255,255,0.8); 
   padding-top: 10px;
   height: 30px;
 }
@@ -41,8 +41,8 @@ text-decoration: none;
 
 
 .firstBackground{
-/* background-image: url('./images/city-scape.svg'); */
-background-image: url('./images/1_NHG0SL6kUtPbS9lY8fT9Gg.jpeg');
+background-image: url('./images/city-scape.svg');
+/* background-image: url('./images/1_NHG0SL6kUtPbS9lY8fT9Gg.jpeg'); */
 background-size: cover;
   background-repeat: no-repeat;
   width:100%;
