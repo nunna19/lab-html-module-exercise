@@ -237,15 +237,14 @@ width: auto;
 height: 100%;
 }
 .column2{
-  overflow: hidden;
-
- position: absolute;
-width: auto;
-height: auto;
   border: 1px solid none;
   padding:  10px ;
-  top: 450px;
-  left: 600px;
+ float: right;
+  margin: 50px 200px  0 0;
+  overflow: hidden;
+  width: auto;
+  height: auto;
+  clear: both;
   
 }
 .boxLine-input{
