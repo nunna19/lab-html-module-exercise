@@ -245,9 +245,9 @@ rover2();
 
 
 function otherRovers(){
-if (rover1.position === rover2.position){
+if (rover1.position === rover2.position2){
   console.log('the Rovers crash  ')
-}else if ((rover1.position - position2) === 1 || (rover1.position - position2) === -1){
+}else if ((rover1.position - rover2.position2) === 1 || (rover1.position - rover2.position2) === -1){
 console.log ('the Rover going to crach')
 }else (
   commands()
