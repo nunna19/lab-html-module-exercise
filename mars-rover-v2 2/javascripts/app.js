@@ -13,13 +13,8 @@ var theRover = {
 
 theRover.travelLog.push(theRover.x);
 theRover.travelLog.push(theRover.y);
+console.log('The travel Log was called  '+theRover.travelLog)
 var position = theRover.position;
-
-
- 
-  theRover.travelLog = theRover.position;
-  console.log('The travel Log was called  '+theRover.travelLog)
-
 
 console.log('Your current direction is: ' + theRover.direction);
 console.log('Your current position is: ' + theRover.position);
@@ -155,6 +150,9 @@ console.log('Commands was call!!')
 
 
 
+
+
+
 function obstacles(){
 
   for (this.x = 0 ; this.x < board.length; this.x++){
@@ -203,6 +201,8 @@ function tracking(){
   }
   tracking();
   
+
+ 
 }
 rover1();
 console.log('.........................................................................................................')
@@ -210,27 +210,25 @@ console.log('/////////////////////another Rover//////////////')
 
 
 
-
-
 var rover2 = function(){
   
   var theRover = {
-    direction: 'N',
+    direction2: 'N',
     x : 0,
     y : 0,
-   position : [],
-   travelLog : []
+   position2 : [0,1],
+   travelLog2 : []
   };
   
   
-  theRover.position.push(theRover.x);
-  theRover.position.push(theRover.y);
- 
-  var position2 = theRover.position = [1,1];
+  theRover.travelLog2.push(theRover.x);
+  theRover.travelLog2.push(theRover.y);
+  console.log('The travel Log was called  '+theRover.travelLog2) 
+  var position2 = theRover.position2;
   
   
-  console.log('Your current direction is: ' + theRover.direction);
-  console.log('Your current position is: ' + theRover.position);
+  console.log('Your current direction is: ' + theRover.direction2);
+  console.log('Your current position is: ' + theRover.position2);
   console.log('rover2 was called')
   rover1();
   
