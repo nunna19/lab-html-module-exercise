@@ -213,22 +213,22 @@ console.log('/////////////////////another Rover//////////////')
 var rover2 = function(){
   
   var theRover = {
-    direction2: 'N',
+    direction: 'N',
     x : 0,
     y : 0,
-   position2 : [0,1],
-   travelLog2 : []
+   position : [0,1],
+   travelLog : []
   };
   
   
-  theRover.travelLog2.push(theRover.x);
-  theRover.travelLog2.push(theRover.y);
-  console.log('The travel Log was called  '+theRover.travelLog2) 
-  var position2 = theRover.position2;
+  theRover.travelLog.push(theRover.x);
+  theRover.travelLog.push(theRover.y);
+  console.log('The travel Log was called  '+theRover.travelLog) 
+  var position2 = theRover.position;
   
   
-  console.log('Your current direction is: ' + theRover.direction2);
-  console.log('Your current position is: ' + theRover.position2);
+  console.log('Your current direction is: ' + theRover.direction);
+  console.log('Your current position is: ' + theRover.position);
   console.log('rover2 was called')
   rover1();
   
