@@ -1,18 +1,24 @@
 // Rover Object Goes Here
 // ======================
 
+
 var theRover = {
   direction: 'N',
   x : 0,
   y : 0,
- position : [],
+ position : [0,0],
  travelLog : []
 };
 
 
-theRover.position.push(theRover.x);
-theRover.position.push(theRover.y);
+theRover.travelLog.push(theRover.x);
+theRover.travelLog.push(theRover.y);
 var position = theRover.position;
+
+
+ 
+  theRover.travelLog = theRover.position;
+  console.log('The travel Log was called  '+theRover.travelLog)
 
 
 console.log('Your current direction is: ' + theRover.direction);
@@ -104,6 +110,24 @@ function moveForward(rover){
 }
 
 
+
+function moveBackwards(){
+
+  if (this.direction === 'N' && this.x > (this.x +1)){
+this.x += +1;
+  }else if (this.direction === 'S' && this.x > 0) {
+    this.x += -1;
+  }else if (this.direction === 'W' && this.y > (this.y + 1)){
+    this.y += +1;
+  }else if (this.direction === 'E' && this.y > 0  ){
+    this.y += -1;
+  }else {
+    console.log('your backforward go to the wall try another direction!!!');
+  }
+console.log('moveBackwards was called');
+}
+
+
 function order(commands){
 
   for (var i = 0 ; i < commands.length; i++){
@@ -125,55 +149,8 @@ function order(commands){
     console.log('please try again : use l = left, r = right, b = backward and f = forward ');
   }
 }
+console.log('Commands was call!!')
 }
-
-
-
-function moveBackwards(){
-
-  if (this.direction === 'N' && this.x > (this.x +1)){
-this.x += +1;
-  }else if (this.direction === 'S' && this.x > 0) {
-    this.x += -1;
-  }else if (this.direction === 'W' && this.y > (this.y + 1)){
-    this.y += +1;
-  }else if (this.direction === 'E' && this.y > 0  ){
-    this.y += -1;
-  }else {
-    console.log('your backforward go to the wall try another direction!!!');
-  }
-console.log('moveBackwards was called');
-}
-
-
-
-
-function obstacles(){
-  if (this.x[this.x] === 'T' || this.y[this.y] === 'T' ){
-   console.log('your direction have obstacle!! Please change direction!!' + this.x[this.x] + ', '+ this.y[this.y]);
-  }else if (this.x[this.x] === 'R' || this.y[this.y] === 'R'){
-   console.log('your direction have obstacle!! Please change direction!!');
-  }
-  console.log('obstacles was called')
- }
- obstacles();
-
-
-
-
-
-function tracking(){
-turnLeft();
-turnRight();
-moveForward();
-moveBackwards();
-
-console.log('tracking was called')
-return this.travelLog;
-}
-tracking();
-console.log(theRover.travelLog);
-
 
 
 
@@ -199,26 +176,44 @@ obstacles();
 
 
 
+function afterMove() {
+  
+// document.querySelector('.class').addEventListener('click',function(command){});
 
-console.log('......///////.....try commands....///////..........')
-order('frlb');
-
-
-console.log('......///////.....wrong commands....///////..........')
-order('ffzzy');
+     command = moveForward();
+     console.log('the travel log was called after MOVE rover !!')
+     return this.travelLog;
 
 }
+afterMove();
+console.log('the travel log Store  after click MOVE  = ' + this.travelLog);
+
+
+
+function tracking(){
+  
+  turnLeft();
+  turnRight();
+  moveForward();
+  moveBackwards();
+
+  console.log('......................................................')
+  console.log('Order Commands called below')
+  order('ffrrllss')
+  }
+  tracking();
+  
+}
 rover1();
-
-
-
-
 console.log('.........................................................................................................')
 console.log('/////////////////////another Rover//////////////')
 
 
 
+
+
 var rover2 = function(){
+  
   var theRover = {
     direction: 'N',
     x : 0,
@@ -231,12 +226,12 @@ var rover2 = function(){
   theRover.position.push(theRover.x);
   theRover.position.push(theRover.y);
  
-  var position2 = theRover.position;
+  var position2 = theRover.position = [1,1];
   
   
   console.log('Your current direction is: ' + theRover.direction);
   console.log('Your current position is: ' + theRover.position);
-  
+  console.log('rover2 was called')
   rover1();
   
 }
@@ -250,7 +245,7 @@ if (rover1.position === rover2.position2){
 }else if ((rover1.position - rover2.position2) === 1 || (rover1.position - rover2.position2) === -1){
 console.log ('the Rover going to crach')
 }else (
-  commands()
+  order()
 )
 }
 otherRovers();
